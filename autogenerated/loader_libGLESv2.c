@@ -155,10 +155,10 @@ void *real_glViewport;
 
 void load_libGLESv2()
 {
-    const char *dlsym_err = "gltrashbag: can't dlsym '%s' function from libGLESv2\n";
+    const char *dlsym_err = "eglblobware: can't dlsym '%s' function from libGLESv2\n";
     void *handle = dlopen_libGLESv2();
     if (!handle) {
-        fprintf(stderr, "gltrashbag: can't get dlopen handle for libGLESv2\n");
+        fprintf(stderr, "eglblobware: can't get dlopen handle for libGLESv2\n");
         abort();
     }
     if (!(real_glActiveTexture = dlsym(handle, "glActiveTexture"))) {

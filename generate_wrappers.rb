@@ -154,10 +154,10 @@ fh.printf("\n")
 fh.write(<<END
 void load_#{library_name}()
 {
-    const char *dlsym_err = "gltrashbag: can't dlsym '%s' function from #{library_name}\\n";
+    const char *dlsym_err = "eglblobware: can't dlsym '%s' function from #{library_name}\\n";
     void *handle = dlopen_#{library_name}();
     if (!handle) {
-        fprintf(stderr, "gltrashbag: can't get dlopen handle for #{library_name}\\n");
+        fprintf(stderr, "eglblobware: can't get dlopen handle for #{library_name}\\n");
         abort();
     }
 END

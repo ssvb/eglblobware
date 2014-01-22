@@ -49,10 +49,10 @@ void *real_eglWaitNative;
 
 void load_libEGL()
 {
-    const char *dlsym_err = "gltrashbag: can't dlsym '%s' function from libEGL\n";
+    const char *dlsym_err = "eglblobware: can't dlsym '%s' function from libEGL\n";
     void *handle = dlopen_libEGL();
     if (!handle) {
-        fprintf(stderr, "gltrashbag: can't get dlopen handle for libEGL\n");
+        fprintf(stderr, "eglblobware: can't get dlopen handle for libEGL\n");
         abort();
     }
     if (!(real_eglBindAPI = dlsym(handle, "eglBindAPI"))) {

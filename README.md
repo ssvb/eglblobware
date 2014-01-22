@@ -1,4 +1,4 @@
-gltrashbag
-==========
+EGLBlobWare
+===========
 
-A set of shared library wrappers to handle the buggy proprietary GLES blobs
+A set of shared library wrappers to handle the buggy proprietary EGL/GLES blobs
